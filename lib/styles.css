@@ -4,9 +4,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: relative;
 }
 
 canvas {
   border: 1px solid black;
   margin: auto;
+  background-color: grey;
+  z-index: 1;
+}
+
+.welcome-screen {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+  z-index: 100;
+  position: absolute;
+}
+
+.start-game {
+  display: none;
 }
