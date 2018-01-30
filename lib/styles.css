@@ -16,8 +16,9 @@ canvas {
 
 h3 {
   color: #C2C6D8;
-  margin-bottom: 0;
-  margin-left: 9em;
+  /*margin-bottom: 0;*/
+  margin: 2px 0 0 9em;
+  /*margin-left: 9em;*/
 }
 
 .welcome-screen {
