@@ -1,7 +1,5 @@
 body {
   overflow: hidden;
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: black;
   font-family: 'Space Mono', monospace;
@@ -10,15 +8,22 @@ body {
 
 canvas {
   border: 1px solid black;
-  /*margin: auto;*/
+  margin-left: 120px;
   background-image: url(https://i.ytimg.com/vi/ypPO4wBe1n0/maxresdefault.jpg);
   background-size: cover;
   z-index: 1;
 }
 
+h3 {
+  color: #C2C6D8;
+  margin-bottom: 0;
+  margin-left: 9em;
+}
+
 .welcome-screen {
   height: 650px;
   width: 1100px;
+  margin: 2em 10em;
   background-color: #c2c6d88a;
   z-index: 100;
   position: absolute;
@@ -31,6 +36,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  margin-bottom: 0;
 }
 
 p {
