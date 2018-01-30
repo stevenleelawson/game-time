@@ -16,8 +16,20 @@ canvas {
 
 h3 {
   color: #C2C6D8;
-  margin-bottom: 0;
-  margin-left: 9em;
+  margin: 2px 0 0 8.5em;
+  display: inline-block;
+}
+
+.level {
+  color: #C2C6D8;
+  margin: 2px 0 0 20em;
+  display: inline-block;
+}
+
+.cities-left {
+  color: #C2C6D8;
+  margin: 2px 0 0 21em;
+  display: inline-block;
 }
 
 .welcome-screen {
