@@ -26,35 +26,4 @@ describe('Game', function(){
     var game = new Game();
     assert.deepEqual(game.playerMissiles, []);
   });
-
-  it('should create explosive player missiles', function() {
-    var game = new Game();
-    game.createExplosion(eventObject);
-    let explosion = new playerMissile(eventObject.x, eventObject.y);
-    assert.equal(game.playerMissiles[1]);
-  });
-
-  it.skip('should create cities and go into an array', function() {
-    var game = new Game();
-  });
-
-
-  it.skip('should begin with no missiles falling from the sky', function() {
-    var game = new Game();
-  });
-
-  it.skip('should create incoming missiles', function() {
-    var game = new Game();
-
-    game.update.createMissiles();
-  });
-
-
-
-  // it('', function(){
-
-
-  //   });
-
-
 });
