@@ -55,6 +55,10 @@ p {
   display: none;
 }
 
+.game-over {
+  display: none;
+}
+
 .start-button {
   font-size: 2em;
   border-radius: 15em;
@@ -65,6 +69,13 @@ p {
   outline: none;
 }
 
-.score {
-  color: magenta;
+.loser {
+  height: 650px;
+  width: 1100px;
+  margin: 2em 10em;
+  background-color: #c2c6d88a;
+  z-index: 100;
+  position: relative;
+  bottom: 46em;
+  text-align: center;
 }
