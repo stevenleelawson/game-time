@@ -172,3 +172,34 @@ Two main points to pay attention to:
 1. In the `Block-test.js` file, we require the `Block.js` file so that we can construct blocks in our tests.
 
 2. In the `test/index.js` file, we require the `Block-test.js` file so that we can view the test results in the browser (at `http://localhost:8080/webpack-dev-server/test.html`).
+
+### EVAL NOTES
+-would like to see implementation of missiles more like the original game
+
+Testing: not enough Tests
+-test all the functions that affect the data
+-test events by mocking events
+-make an object, with mock "mousex", and pass into function
+-would also make "mouse object"
+
+-call functions inside of update and have the functions live in Game.js
+
+-use bind() to keep the context of this
+eg in the constructor functions
+
+-method inheritance syntax, super().erase(), but used more as a reminder and not strictly necessary
+
+-code is pretty clean, organization is good
+
+-put draw and erase in abstract parent
+
+To do to pass:
+- Finish tests
+- Move functions out of update in Game.js
+- Add draw and erase methods to abstract parent
+
+missile: isBelow method to see how missile is traveling, anything that changes the data, true false, removes from an array
+
+-test that the data is updating the way you expect it is updating
+
+-make sure the method is changing the data in the way you expect
