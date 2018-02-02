@@ -16,6 +16,11 @@ describe('Game', function(){
     assert.equal(game.score, 0);
     });
 
+  it('should start the game at a default level of 1', function() {
+    var game = new Game();
+    assert.equal(game.level, 1);
+  });
+
   it('should begin game at level 1', function() {
    var game = new Game();
    assert.equal(game.level, 1);
@@ -37,39 +42,28 @@ describe('Game', function(){
     assert.equal(game.gameOver, false);
   });
 
-  it.skip('Game should be able to create explosions', function() {
-    var game = new Game();
-    var x = 50;
-    var y = 50;
-    var explosions = new PlayerMissile(x, y);
-    game.createExplosion(x,y);
-
-    assert.deepEqual(game.playerMissiles.length, 1);
-  });
-
-  it('should start the game at a default level of 1', function() {
-    var game = new Game();
-    assert.equal(game.level, 1);
-  });
-
-  it.skip('should be 9 missiles in the missiles array', function(){
+  it('should have arrived if a collision is detected', function() {
     var game = new Game();
     var missiles = new Missiles();
-    var targetx = 240;
-    var targety = 695;
-    var x = 10;
-    var y = 10;
-    // var innerWidth = innerWidth;
 
-    assert.deepEqual(game.missilesArray.length, 0);
-
-    game.createMissiles();
-
-    assert.deepEqual(game.missilesArray.length, 9);
-
+    assert.equal(missiles.hasArrived, false);
+    game.collisionDetect();
+    assert.equal(missiles.hasArrived, false);
   });
 
-  it('')
+  it('should not exist after its been hit', function() {
+    var game = new Game();
+    var target = new Cities();
 
+    assert.equal(target.exists, true);
+    game.collisionDetect();
+    assert.equal(target.exists, true);
+  });
 
-});
+  it('should take missiles from the array when hit', function() {
+    var game = new Game();
+    var missiles = new Missiles();
+    
+    assert.deepEqual(game.missilesArray.length, 0);
+  });
+})
