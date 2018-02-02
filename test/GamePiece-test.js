@@ -1,5 +1,4 @@
-const chai = require('chai');
-const assert = chai.assert;
+const {expect, assert} = require('chai');
 const GamePiece = require('../lib/GamePiece.js');
 
 describe('GamePiece', function(){
@@ -14,6 +13,7 @@ describe('GamePiece', function(){
      assert.equal(gamePiece.y, 20);
      assert.equal(gamePiece.width, 50);
      assert.equal(gamePiece.height, 40);
-  }); 
+  });
+   
 });
 

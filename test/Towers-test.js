@@ -1,11 +1,11 @@
-const chai = require('chai');
-const assert = chai.assert;
+const {expect, assert} = require('chai');
 const Towers = require('../lib/Towers.js');
+const GamePiece = require('../lib/GamePiece.js');
 
 describe('Towers', function() {
-  it('should be a function', function(){
+  it('should extend GamePiece', function(){
     var tower = new Towers(10, 20, 30, 40)
-    assert.instanceOf(tower, Towers);
+    assert.instanceOf(tower, GamePiece);
   });
 
   it('should take x, y, width, and height as arguments', function() {

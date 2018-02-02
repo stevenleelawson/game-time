@@ -1,5 +1,4 @@
 {
-  "devtool": "inline-source-map",
   "name": "game-time-starter-kit-fem1",
   "version": "1.0.0",
   "description": "Starter kit for Turing School's front-end module 1 Game Time project",
