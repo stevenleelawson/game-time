@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  devtool: "inline-source-map",
   entry: {
     main: "./lib/index.js",
     test: "mocha!./test/index.js"
@@ -17,5 +18,5 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.json', '.css']
-  }
+  },
 };
