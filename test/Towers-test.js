@@ -16,10 +16,16 @@ describe('Towers', function() {
      assert.equal(tower.width, 50);
      assert.equal(tower.height, 40);
   });
+
   it('should exist', function() {
-     var tower = new Towers(10, 20, 50, 40);
+     var tower = new Towers();
 
      assert.equal(tower.exists, true);
+  });
 
+  it('should be active', function() {
+     var tower = new Towers();
+
+     assert.equal(tower.active, true);
   });
 })
