@@ -7,4 +7,4 @@ A recreation of the classic 1980 Atari game.
 -Utilizing methods on classes for functions and actions
 -Using mocha/chai to test all functionality
 
-![wire](public/missilecommand.png?raw=true "missilecommand")
+![wire](missilecommand.png?raw=true "missilecommand")
