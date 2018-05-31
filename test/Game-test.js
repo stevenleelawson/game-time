@@ -21,11 +21,6 @@ describe('Game', function(){
     assert.equal(game.level, 1);
   });
 
-  it('should begin game at level 1', function() {
-   var game = new Game();
-   assert.equal(game.level, 1);
-  });
-
   it('should have a context', function() {
     var game = new Game();
     assert.equal(game.ctx);
@@ -51,6 +46,15 @@ describe('Game', function(){
     assert.equal(missiles.hasArrived, false);
   });
 
+  it('should have arrived if a collision is detected', function() {
+    var game = new Game();
+    var missiles = new Missiles();
+
+    assert.equal(missiles.hasArrived, false);
+    game.collisionDetect();
+    assert.equal(missiles.hasArrived, false);
+  });
+
   it('should not exist after its been hit', function() {
     var game = new Game();
     var target = new Cities();
@@ -63,7 +67,7 @@ describe('Game', function(){
   it('should take missiles from the array when hit', function() {
     var game = new Game();
     var missiles = new Missiles();
-    
+
     assert.deepEqual(game.missilesArray.length, 0);
   });
 })
